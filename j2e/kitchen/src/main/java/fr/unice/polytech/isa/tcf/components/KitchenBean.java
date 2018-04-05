@@ -10,6 +10,8 @@ import fr.unice.polytech.isa.tcf.utils.CookieScheduler;
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.jms.MessageProducer;
+import javax.jms.Session;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.Queue;

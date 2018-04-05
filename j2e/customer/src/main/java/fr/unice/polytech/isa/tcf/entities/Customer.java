@@ -1,6 +1,7 @@
 package fr.unice.polytech.isa.tcf.entities;
 
 
+import  fr.unice.polytech.isa.tcf.entities.Order;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;

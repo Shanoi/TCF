@@ -1,5 +1,7 @@
 package fr.unice.polytech.isa.tcf.entities;
 
+import org.apache.cxf.transport.http.Cookies;
+
 import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;

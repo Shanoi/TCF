@@ -14,6 +14,7 @@ import fr.unice.polytech.isa.tcf.utils.BankAPI;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.mail.FetchProfile;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.io.IOException;
@@ -38,7 +39,7 @@ public class CashierBean implements Payment, ControlledPayment {
 	}
 
 	@Override
-	public String payOrder(Customer c, Set<Item> items) throws PaymentException {
+	public String payOrder(Customer c, Set<FetchProfile.Item> items) throws PaymentException {
 
 		Customer customer = entityManager.merge(c);
 

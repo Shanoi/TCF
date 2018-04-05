@@ -9,6 +9,7 @@ import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.entities.Item;
 import fr.unice.polytech.isa.tcf.exceptions.EmptyCartException;
 import fr.unice.polytech.isa.tcf.exceptions.PaymentException;
+import org.apache.cxf.transport.http.Cookies;
 
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
@@ -47,7 +48,7 @@ public class OrderBean implements Serializable {
 	private String customerName;
 
 	private Customer customer;
-	private Cookies cookie;
+	private fr.unice.polytech.isa.tcf.entities.Cookies cookie;
 	private int quantity;
 	private String orderId;
 
@@ -64,8 +65,8 @@ public class OrderBean implements Serializable {
 	}
 
 
-	public Cookies getCookie() { return cookie; }
-	public void setCookie(Cookies cookie) { this.cookie = cookie; }
+	public fr.unice.polytech.isa.tcf.entities.Cookies getCookie() { return cookie; }
+	public void setCookie(fr.unice.polytech.isa.tcf.entities.Cookies cookie) { this.cookie = cookie; }
 
 
 	public int getQuantity() { return quantity; }
@@ -83,8 +84,8 @@ public class OrderBean implements Serializable {
 		return new ArrayList<Item>(cartProcessor.contents(getCustomer()));
 	}
 
-	public List<Cookies> getRecipes() {
-		return new ArrayList<Cookies>(catalogue.listPreMadeRecipes());
+	public List<fr.unice.polytech.isa.tcf.entities.Cookies> getRecipes() {
+		return new ArrayList<fr.unice.polytech.isa.tcf.entities.Cookies>(catalogue.listPreMadeRecipes());
 	}
 
 
