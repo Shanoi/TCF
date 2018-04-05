@@ -12,6 +12,7 @@
         <module>cart</module>
         <module>kitchen</module>
         <module>catalogue</module>
+        <module>customer</module>
     </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
