@@ -3,10 +3,16 @@ package fr.unice.polytech.isa.tcf.utils;
 import fr.unice.polytech.isa.tcf.entities.Order;
 import fr.unice.polytech.isa.tcf.entities.OrderStatus;
 
-import javax.ejb.*;
+import javax.ejb.Lock;
+import javax.ejb.LockType;
+import javax.ejb.Schedule;
+import javax.ejb.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Optional;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
