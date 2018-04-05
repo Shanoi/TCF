@@ -11,6 +11,7 @@
         <module>cashier</module>
         <module>cart</module>
         <module>kitchen</module>
+        <module>catalogue</module>
     </modules>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
